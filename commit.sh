@@ -1,3 +1,10 @@
-2022-02-23T08:02:00+08:00
-随机数:3251
-提交次数:54
+#!/bin/bash
+
+# create for bash shell script file
+
+for (( i=1; i<=4; i++))
+do
+	touch $i.sh
+	echo '#!/bin/bash' > $i.sh
+	chmod 764 $i.sh
+done
